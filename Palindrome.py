@@ -22,8 +22,8 @@ name = input("Enter your name: ")
 def palin_test(word):
     x = 0
     judge = ''
+    word = word.lower()
     while x < len(word):
-        print(word[x])
         if word[x] != word[-x - 1]:
             print("Is not a palindrome")
         else:
