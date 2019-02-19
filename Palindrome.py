@@ -25,11 +25,13 @@ def palin_test(word):
     word = word.lower()
     while x < len(word):
         if word[x] != word[-x - 1]:
-            print("Is not a palindrome")
+            judge = "Is not a palindrome"
+            break
         else:
-            print("Is a palindrome")
+            judge = "Is a palindrome"
         x += 1
-        return
+    print(judge)
+    return
 
 palin_test(name)
         
